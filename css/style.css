@@ -1,0 +1,97 @@
+.container-fluid {
+    margin-top: 20px;
+}
+
+.border {
+    margin-left: -1px;
+}
+
+#notification {
+    position: absolute;
+    margin-left: 200px;
+}
+
+.alert-message .alert-icon {
+    width: 3rem;
+}
+
+.alert-message .close {
+    font-size: 1rem;
+    color: #a6a6a6;
+}
+
+.alert-success .alert-icon {
+    background-color: #c3e6cb;
+}
+
+#mainTable {
+    margin-left: 20px;
+}
+
+#mainTable .first td {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: #D2691E;
+    color: white;
+}
+
+
+
+#mainTable tbody td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#mainTable tbody tr:nth-child(2n) {
+    background: #FFFACD;
+}
+
+#mainTable tbody tr:nth-child(2n+1) {
+    background: #FFFFE0;
+}
+
+.color-active {
+    background: #FFD700;
+}
+
+
+#mainTable tbody td {
+    padding: 0 5px;
+}
+
+#mainTable tbody td:last-child i {
+    margin: 0 10px;
+    text-align: center;
+}
+
+#mainTable tbody td:last-child i {
+    color: #7e7c7d;
+}
+
+#mainTable tbody td:last-child i:hover {
+    color: #403e3f;
+}
+
+
+
+#mainTable thead .sort td{
+    text-align: center;
+}
+
+#mainTable thead .sort i{
+    padding: 10px 15px;
+}
+
+.pages {
+    margin: 20px 50px;
+    display: flex;
+}
+
+.pages form {
+    margin-right: 20px;
+}
+
+
+
+/* 	#FFFFE0  #FFFACD 	#D2691E #FFD700*/

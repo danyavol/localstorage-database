@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/solid.css">
+
+
+    <title>Database</title>
+</head>
+
+<body>
+    <!-- Всплывающее уведомление -->
+    <div id="notification">
+
+    </div>
+
+    <!-- Кнопки управления -->
+    <div class="container-fluid">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#ModallAddUser" id="but-add-user">
+            Add user
+        </button>
+        <button type="button" id="testUser" class="btn btn-success">fast add user</button>
+    </div>
+
+    <!-- Модальное окно Добавить нового пользователя -->
+    <div class="modal fade" id="ModallAddUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Добавить нового пользователя</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Имя</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Иван Петров">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPhoneNumber" class="col-sm-2 col-form-label">Телефон</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPhoneNumber" placeholder="xx xxx-xx-xx">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputCity" class="col-sm-2 col-form-label">Город</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputCity" placeholder="Минск">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputAddress" class="col-sm-2 col-form-label">Адрес</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="ул.Ленина 9-24">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPay" class="col-sm-2 col-form-label">ЗП</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPay" placeholder="2000">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" id="sendInput">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Модальное окно Добавить нового пользователя -->
+
+
+    <table id="mainTable">
+        <thead>
+            <tr class="sort">
+                <td><i class="fas fa-sort-amount-down-alt" sort="id"></i></td>
+                <td><i class="fas fa-sort" sort="name"></i></td>
+                <td></td>
+                <td></td>
+                <td><i class="fas fa-sort" sort="city"></i></td>
+                <td><i class="fas fa-sort" sort="address"></i></td>
+                <td><i class="fas fa-sort" sort="salary"></i></td>
+                <td><i class="fas fa-sort" sort="regTime"></i></td>
+                <td><i class="fas fa-sort" sort="updTime"></i></td>
+            </tr>
+            <tr class="first">
+                <td>id</td>
+                <td>Имя</td>
+                <td>Телефон</td>
+                <td>Email</td>
+                <td>Город</td>
+                <td>Адрес</td>
+                <td>ЗП</td>
+                <td>Дата регистрации</td>
+                <td>Дата обновления</td>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
