@@ -1,5 +1,5 @@
 # localstorage-database
-This is a simple database on vanilla js. It uses localstorage and has data validation
+This is a simple database on vanilla js. It uses localstorage to store data and has validation
 
 ![screenshot1](https://i.imgur.com/9kYf2kU.png)
 
